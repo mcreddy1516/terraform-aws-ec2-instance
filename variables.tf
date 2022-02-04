@@ -64,9 +64,9 @@ variable "enclave_options_enabled" {
   default     = null
 }
 
-variable "ephemeral_block_device" {
+variable "ephemeral_block_device" { hellodjdjdj
   description = "Customize Ephemeral (also known as Instance Store) volumes on the instance"
-  type        = list(map(string))
+  type        = list(map(string))dmdmd
   default     = []
 }
 

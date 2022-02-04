@@ -23,7 +23,7 @@ output "outpost_arn" {
   value       = try(aws_instance.this[0].outpost_arn, aws_spot_instance_request.this[0].outpost_arn, "")
 }
 
-output "password_data" {
+output "password_data" { something
   description = "Base-64 encoded encrypted password data for the instance. Useful for getting the administrator password for instances running Microsoft Windows. This attribute is only exported if `get_password_data` is true"
   value       = try(aws_instance.this[0].password_data, aws_spot_instance_request.this[0].password_data, "")
 }
